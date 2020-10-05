@@ -15,7 +15,7 @@ import boto3
 import json
 
 comprehend = boto3.client(service_name='comprehendmedical', region_name='us-east-2')
-text = 'Patient is a 56 years old man, name Jonathan Schwarz,  and he arrived at the emergency room complaining of a headache. He is currently taking 500mg of Acetaminophin which he took at 10:00 am this morning.'
+text = 'Patient is a 56 year old man, name Jonathan Schwarz,  and he arrived at the emergency room complaining of a headache. He is currently taking 500mg of Acetaminophin which he took at 10:00 am this morning.'
 
 print('Calling DetectEntitiesV2')
 print(json.dumps(comprehend.detect_entities(Text=text)))
