@@ -19,6 +19,4 @@ text = 'Patient is a 56 years old man, name Jonathan Schwarz,  and he arrived at
 
 print('Calling DetectEntitiesV2')
 print(json.dumps(comprehend.detect_entities(Text=text)))
-##print(json.dumps(comprehend.detect_entities(Text=text, LanguageCode='en'),
-##                 sort_keys=True, indent=4))
 print('End of DetectEntities\n')
